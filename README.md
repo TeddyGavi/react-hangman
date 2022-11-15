@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Play Here
+[Hangman](https://teddygavi.github.io/react-hangman/)
+
 ## Information
 - I used [Web-Dev Simplified](https://www.youtube.com/watch?v=-ONUyenGnWw&t=1804s) as a inspiration and teaching aid when creating this simple project
 
