@@ -1,0 +1,4 @@
+.each-letter {
+  border-bottom: .75rem solid black;
+  text-transform: capitalize;
+}

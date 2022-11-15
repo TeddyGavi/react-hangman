@@ -1,0 +1,32 @@
+.letter {
+  color: black;
+  font-size: 3rem;
+  background: none;
+  aspect-ratio: 1 / 1;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.letter.win {
+  background-color: darkgreen;
+  opacity: 50%;
+}
+
+.letter:disabled {
+  background-color: red;
+  opacity: 20%;
+}
+
+.letter:hover:not(:disabled),
+.letter:focus:not(:disabled) {
+  background-color: rgba(125, 125, 125, 75%);
+  font-size: 3.5rem;
+}
+
+.letter.active:not(:disabled) {
+  pointer-events: none;
+  background-color: darkgreen;
+  opacity: 75%; 
+  font-size: 3rem; 
+  color: antiquewhite;
+}

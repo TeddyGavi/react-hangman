@@ -1,0 +1,92 @@
+.man-container {
+  position: relative;
+  max-width: 800px;
+
+}
+
+.base {
+  background: black;
+  width: 250px;
+  height: 10px;
+}
+
+.upright {
+  height: 400px;
+  width: 10px;
+  background: black;
+  margin-left: 120px;
+}
+
+.hang-arm {
+  background: black;
+  width: 250px;
+  height: 10px;
+  margin-left: 120px;
+
+}
+.vertical-arm {
+  position: absolute;
+  background: black;
+  width: 10px;
+  height: 50px;
+  margin-left: 360px;
+
+}
+.man-head {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  border: 10px solid black;
+  top: 50px;
+  right: -34px;
+  border-radius: 100%;
+
+}
+.man-body {
+  position: absolute;
+  background: black;
+  width: 10px;
+  height: 150px;
+  right: 0px;
+  top: 125px
+}
+.left-arm {
+  position: absolute;
+  background: black;
+  width: 10px;
+  height: 90px;
+  right: -30px;
+  top: 100px;
+  rotate: 45deg;
+
+}
+.right-arm {
+  position: absolute;
+  background: black;
+  width: 10px;
+  height: 90px;
+  right: 30px;
+  top: 100px;
+  rotate: 315deg;
+
+}
+.left-leg {
+  position: absolute;
+  background: black;
+  width: 10px;
+  height: 80px;
+  right: -30px;
+  top: 260px;
+  rotate: 135deg;
+
+}
+.right-leg {
+
+  position: absolute;
+  background: black;
+  width: 10px;
+  height: 80px;
+  right: 30px;
+  top: 260px;
+  rotate: 225deg;
+}
