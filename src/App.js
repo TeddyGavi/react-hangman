@@ -870,12 +870,12 @@ function App() {
   const correctLetter = guessed.filter((x) => guessWord.includes(x));
 
   const youLost = wrongLetter.length >= 6;
-  const youWon = guessWord.split("").every(x => guessed.includes(x));
+  const youWon = guessWord.split("").every((x) => guessed.includes(x));
 
   const resetGame = () => {
-    setGuessWord(getRandWord)
-    setGuessed([])
-  }
+    setGuessWord(getRandWord);
+    setGuessed([]);
+  };
 
   const addLetter = useCallback(
     (letter) => {
@@ -888,7 +888,6 @@ function App() {
   useEffect(() => {
     const handleKeyPress = (KeyboardEvent) => {
       const { key } = KeyboardEvent;
-      console.log(key);
       if (!key.match(/^[a-z]$/)) return;
 
       KeyboardEvent.preventDefault();
@@ -903,8 +902,13 @@ function App() {
   }, [addLetter]);
 
   return (
-    <div className="App">
-      <WinLose resetGame={resetGame} youWon={youWon} youLost={youLost} />
+    <div className={`App ${(youLost || youWon) && "end"}`}>
+      <WinLose
+        word={guessWord}
+        resetGame={resetGame}
+        youWon={youWon}
+        youLost={youLost}
+      />
       <HangmanDrawing numGuess={wrongLetter.length} />
       <Guess guess={guessWord} guessedLetters={guessed} />
       <Keyboard

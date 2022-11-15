@@ -18,6 +18,7 @@ export default function WinLose(props) {
             <button onClick={() => props.resetGame()} className="loser">
               Have another go?
             </button>
+            <span className="answer">{`The word was ${props.word.toUpperCase()}`}</span>
           </span>
         ))}
     </>

@@ -7,7 +7,7 @@ export default function Letter(props) {
     <button 
     className={`letter ${isCorrect}`}
     onClick={() => props.addLetter(props.letter)}
-    disabled={isWrong}
+    disabled={isWrong || props.winLose}
     >
       {props.letter}
     </button>

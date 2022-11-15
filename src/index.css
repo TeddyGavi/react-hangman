@@ -20,6 +20,11 @@ code {
   max-width: 900px;
   margin: auto;
 }
+
+.App.end {
+  background: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, .5);
+}
 .App {
   justify-content: center;
   display: flex;
@@ -28,3 +33,4 @@ code {
   margin: 0 2rem;
   align-items: center;
 }
+

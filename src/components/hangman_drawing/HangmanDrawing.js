@@ -1,5 +1,4 @@
 import "./hangman.css";
-// import classNames from "classnames"
 
 const body = [
   "man-head",
@@ -11,7 +10,6 @@ const body = [
 ];
 
 export default function HangmanDrawing({ numGuess }) {
-  // console.log(numGuess);
   const bodyDiv = body.map((x, i) => {
     return (
       <div
