@@ -1,34 +1,6 @@
 import Letter from "../letter/Letter";
 import "./keyboard.css";
-
-const alphabet = [
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  "U",
-  "V",
-  "W",
-  "X",
-  "Y",
-  "Z",
-];
+import { alphabet } from "../../assets/alphabet";
 
 export default function Keyboard(props) {
   const keyboard = alphabet.map((e, i) => {
