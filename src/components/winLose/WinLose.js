@@ -1,24 +1,24 @@
 import "./winLose.css";
 
-export default function WinLose(props) {
+export default function WinLose({ youLost, youWon, resetGame, word }) {
   return (
     <>
       <span className="title">Will you survive?</span>
-      {(props.youWon && (
+      {(youWon && (
         <span>
           Winner!
-          <button onClick={() => props.resetGame()} className="winner">
+          <button onClick={() => resetGame()} className="winner">
             Have another go?
           </button>
         </span>
       )) ||
-        (props.youLost && (
+        (youLost && (
           <span>
             Loser!
-            <button onClick={() => props.resetGame()} className="loser">
+            <button onClick={() => resetGame()} className="loser">
               Have another go?
             </button>
-            <span className="answer">{`The word was ${props.word.toUpperCase()}`}</span>
+            <span className="answer">{`The word was ${word.toUpperCase()}`}</span>
           </span>
         ))}
     </>

@@ -11,12 +11,8 @@ const body = [
 
 export default function HangmanDrawing({ numGuess }) {
   const bodyDiv = body.map((x, i) => {
-    return (
-      <div
-      key={i}
-      className={x}></div>
-    )
-  })
+    return <div key={i} className={x}></div>;
+  });
 
   return (
     <section className="man-container">

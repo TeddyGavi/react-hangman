@@ -5,7 +5,6 @@ import { useCallback, useEffect, useState } from "react";
 import WinLose from "./components/winLose/WinLose";
 import { wordArray } from "./assets/wordArray";
 
-
 function getRandWord() {
   return wordArray[Math.floor(Math.random() * wordArray.length)];
 }
