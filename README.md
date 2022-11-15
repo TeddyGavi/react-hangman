@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Use your keyboard or your mouse to select letters in an attempt to guess the word
 
-[gif of usage](./public/images/hangman.gif)
+![gif of usage](public/images/hangman.gif)
 
 ## Goals
 - Increase the "dictionary" size
